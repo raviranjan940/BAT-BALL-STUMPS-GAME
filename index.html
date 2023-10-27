@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cricBBS</title>
+  <style>
+    *{
+      padding: 10px;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+    }
+
+    #wrapper{
+      text-align: center;
+      width: 40%;
+      padding: 10px;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <h1>Bat Ball Stump Game</h1>
+    <button onclick="
+    let randNumber = Math.random()*3;
+    //compChoice;
+    if(randNumber > 0 && randNumber <=1){
+      compChoice = 'Bat';
+      //console.log('Computer Choice is Bat');
+    }else if(randNumber>1 && randNumber <= 2){
+      compChoice = 'Ball';
+      // console.log('Computer Choice is Ball');
+    }else{
+      compChoice = 'Stumps';
+      //console.log('Computer Choice is Stumps');
+    }
+
+    if(compChoice === 'Ball'){
+      resultMsg = 'User Won :)';
+    }else if(compChoice === 'Bat'){
+      resultMsg = `It's a tie. -::-`
+    }else if(compChoice === 'Stumps'){
+      resultMsg = `Computer Won :)`;
+    }
+
+    alert(`You have choosen Bat. \nComputer Choice is ${compChoice} \n${resultMsg}`);
+    ">Bat</button>
+    <button onclick="
+    randNumber = Math.random()*3;
+    //compChoice;
+    if(randNumber > 0 && randNumber <=1){
+      compChoice = 'Bat';
+      //console.log('Computer Choice is Bat');
+    }else if(randNumber>1 && randNumber <= 2){
+      compChoice = 'Ball';
+      // console.log('Computer Choice is Ball');
+    }else{
+      compChoice = 'Stumps';
+      //console.log('Computer Choice is Stumps');
+    }
+
+    if(compChoice === 'Ball'){
+      resultMsg = `It's a tie. -::-`;
+    }else if(compChoice === 'Bat'){
+      resultMsg = `Computer Won :)`;
+    }else if(compChoice === 'Stumps'){
+      resultMsg = `User Won :)`;
+    }
+
+    alert(`You have choosen Ball. \nComputer Choice is ${compChoice} \n${resultMsg}`);
+    ">Ball</button>
+    <button onclick="
+    randNumber = Math.random()*3;
+    //compChoice;
+    if(randNumber > 0 && randNumber <=1){
+      compChoice = 'Bat';
+      //console.log('Computer Choice is Bat');
+    }else if(randNumber>1 && randNumber <= 2){
+      compChoice = 'Ball';
+      // console.log('Computer Choice is Ball');
+    }else{
+      compChoice = 'Stumps';
+      //console.log('Computer Choice is Stumps');
+    }
+
+    if(compChoice === 'Ball'){
+      resultMsg = 'User Won :)';
+    }else if(compChoice === 'Bat'){
+      resultMsg = `Computer Won :)`;
+    }else if(compChoice === 'Stumps'){
+      resultMsg = `It's a tie. -::-`;
+    }
+
+    alert(`You have choosen Stumps. \nComputer Choice is ${compChoice} \n${resultMsg}`);
+    ">Stumps</button>
+  </div>
+
+  <script>
+    let compChoice;
+    let resultMsg;
+  </script>
+</body>
+</html>
